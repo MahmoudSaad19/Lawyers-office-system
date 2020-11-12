@@ -86,8 +86,8 @@ namespace Presentaion_Layer___winforms__UI_
             btnSearch.Location = new Point(1049, 34);
             dataGridViewOldClients.DataSource = new List<Client>() 
             {
-                new Client(){ Address= "التجمع اللأول", Email="a@b.com", Job="مهندس", Name="على", Notes="حديث التخرج", NumberOfCases = 3, SSN = 32432423423, Telphone = "41324432"},
-                new Client(){ Address= "الدقى", Email="a@b.com", Job="عامل", Name="عماد", Notes="احذر منه", NumberOfCases = 3, SSN = 32432423423, Telphone = "41324432"}
+                new Client(){ Address= "التجمع اللأول", Email="a@b.com", Job="مهندس", Name="على", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠", Telphone = "41324432"},
+                new Client(){ Address= "الدقى", Email="a@b.com", Job="عامل", Name="عماد", Notes="سنة ", NumberOfCases = 3, SSN = "١٤٦٧٩٠", Telphone = "١٤٦٧٩٠"}
             };
             dataGridViewOldClients.Show();
         }
@@ -96,7 +96,7 @@ namespace Presentaion_Layer___winforms__UI_
     public class Client
     {
         [DisplayName("رقم المدنية")]
-        public long SSN { get; set; }
+        public string SSN { get; set; }
         [DisplayName("الاسم")]
         public string Name { get; set; }
         [DisplayName("العنوان")]
