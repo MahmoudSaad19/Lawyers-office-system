@@ -23,5 +23,14 @@ namespace Presentaion_Layer___winforms__UI_
             home.Show();
             this.Hide();
         }
+
+        private void Reports_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
