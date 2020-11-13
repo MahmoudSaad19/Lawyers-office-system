@@ -12,13 +12,24 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class Case : Form
     {
+        bool isName;
+
+        #region ctor + Load
+
         public Case()
         {
             InitializeComponent();
+            isName = false;
         }
 
+        private void Case_Load(object sender, EventArgs e)
+        {
+            HideAllElements();
+        }
 
+        #endregion
 
+        #region Controls Methods
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -27,6 +38,46 @@ namespace Presentaion_Layer___winforms__UI_
             this.Hide();
             ResetUI();
         }
+
+        private void btnOldClient_Click(object sender, EventArgs e)
+        {
+            ShowAllElements();
+            btnNewClient.Hide();
+            btnOldClient.Hide();
+        }
+
+        private void btnNewClient_Click(object sender, EventArgs e)
+        {
+            btnNewClient.Hide();
+            btnOldClient.Hide();
+            openNewCaseForm();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            grpBoxRadio.Location = new Point(823, 17);
+            txtSearch.Location = new Point(288, 29);
+            btnSearch.Location = new Point(1049, 34);
+            dataGridViewOldClients.DataSource = Client.Data();
+            AdjustColumnsWidth();
+            dataGridViewOldClients.Show();
+        }
+
+        private void dataGridViewOldClients_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            bool dataGridIsValid = dataGridViewOldClients.Rows.Count > 0 && dataGridViewOldClients.Rows[0].Cells.Count > 0 && e.RowIndex > 0 && e.RowIndex <= dataGridViewOldClients.Rows.Count;
+            if (dataGridIsValid)
+            {
+                string ssn = (string)dataGridViewOldClients.Rows[e.RowIndex].Cells[1].Value;
+                MessageBox.Show($"لقد أخترت {ssn} ");
+                openNewCaseForm();
+            }
+
+        }
+
+        #endregion
+
+        #region Helper Methods
 
         private void ResetUI()
         {
@@ -38,25 +89,12 @@ namespace Presentaion_Layer___winforms__UI_
             btnOldClient.Show();
         }
 
-        private void Case_Load(object sender, EventArgs e)
-        {
-            HideAllElements();
-        }
-
         private void HideAllElements()
         {
             btnSearch.Hide();
             grpBoxRadio.Hide();
             txtSearch.Hide();
             dataGridViewOldClients.Hide();
-        }
-
-        private void btnOldClient_Click(object sender, EventArgs e)
-        {
-            ShowAllElements();            
-            openNewCaseForm();
-            btnNewClient.Hide();
-            btnOldClient.Hide();
         }
 
         private void ShowAllElements()
@@ -68,47 +106,14 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void openNewCaseForm()
         {
-            //throw new NotImplementedException();
+            NewCase newCase = FormPool.NewCase;
+            newCase.FormClosed += (s, args) => this.Close();
+            newCase.Show();
+            this.Hide();
+            ResetUI();
         }
-
-        private void btnNewClient_Click(object sender, EventArgs e)
-        {
-            
-            btnNewClient.Hide();
-            btnOldClient.Hide();
-            openNewCaseForm();
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            grpBoxRadio.Location = new Point(823, 17);
-            txtSearch.Location = new Point(288, 29);
-            btnSearch.Location = new Point(1049, 34);
-            dataGridViewOldClients.DataSource = Data();
-            AdjustColumnsWidth();
-            dataGridViewOldClients.Show();
-        }
-
-        private List<Client> Data()
-        {
-            List<Client> clients = new List<Client>()
-            {
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new Client(){ Address= "الدقى", Email="a@b.com", Job="عامل", Name="عماد", Notes="سنة ", NumberOfCases = 3, SSN = "١٤٦٧٩٠", Telphone = "١٤٦٧٩٠"}
-            };
-            return clients;
-        }
-
         private void AdjustColumnsWidth()
         {
-
             int width = 0;
             for (int i = 0; i < dataGridViewOldClients.Columns.Count; i++)
             {
@@ -135,22 +140,12 @@ namespace Presentaion_Layer___winforms__UI_
             }
         }
 
-        private void dataGridViewOldClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            dataGridViewOldClients.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            int index = dataGridViewOldClients.Rows.GetNextRow(e.RowIndex, DataGridViewElementStates.Selected);
-            //dataGridViewOldClients.SelectedRows.
-        }
-
-        private void dataGridViewOldClients_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        #endregion
     }
 
     public class Client
     {
-        
+
         [DisplayName("الاسم")]
         public string Name { get; set; }
         [DisplayName("رقم المدنية")]
@@ -163,11 +158,27 @@ namespace Presentaion_Layer___winforms__UI_
         public string Email { get; set; }
         [DisplayName("المهنة")]
         public string Job { get; set; }
-        
+
         [DisplayName("عدد القضايا")]
         public int NumberOfCases { get; set; }
         [DisplayName("ملاحظات")]
         public string Notes { get; set; }
-        //public static 
+
+        public static List<Client> Data()
+        {
+            List<Client> clients = new List<Client>()
+            {
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name="  محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمود على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name="  محمود على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" حسين صابر ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" إسلام جمال ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" عمرو حسين ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" شريف فريد ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "الدقى", Email="a@b.com", Job="عامل", Name="عماد كمال", Notes="سنة ", NumberOfCases = 3, SSN = "١٤٦٧٩٠", Telphone = "١٤٦٧٩٠"}
+            };
+            return clients;
+        }
     }
 }

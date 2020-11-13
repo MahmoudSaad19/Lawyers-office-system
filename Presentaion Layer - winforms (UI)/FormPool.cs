@@ -14,6 +14,8 @@ namespace Presentaion_Layer___winforms__UI_
         public static Payment Payment { get; } = new Payment();
         public static Reports Reports { get; } = new Reports();
         public static ReceiveFees Fees { get; } = new ReceiveFees();
+        public static NewCase NewCase { get; } = new NewCase();
+
 
         //static FormPool()
         //{

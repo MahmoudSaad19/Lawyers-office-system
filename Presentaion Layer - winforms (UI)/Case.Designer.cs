@@ -155,7 +155,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.RoyalBlue;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewOldClients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewOldClients.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridViewOldClients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewOldClients.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewOldClients.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridViewOldClients.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -177,7 +179,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewOldClients.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewOldClients.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewOldClients.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewOldClients.Location = new System.Drawing.Point(0, 116);
             this.dataGridViewOldClients.MultiSelect = false;
             this.dataGridViewOldClients.Name = "dataGridViewOldClients";
             this.dataGridViewOldClients.ReadOnly = true;
@@ -191,6 +193,7 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewOldClients.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewOldClients.RowHeadersVisible = false;
             this.dataGridViewOldClients.RowHeadersWidth = 60;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.dataGridViewOldClients.RowsDefaultCellStyle = dataGridViewCellStyle5;
@@ -198,10 +201,9 @@
             this.dataGridViewOldClients.RowTemplate.Height = 32;
             this.dataGridViewOldClients.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewOldClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewOldClients.Size = new System.Drawing.Size(1157, 511);
+            this.dataGridViewOldClients.Size = new System.Drawing.Size(1199, 382);
             this.dataGridViewOldClients.TabIndex = 15;
-            this.dataGridViewOldClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOldClients_CellContentClick);
-            this.dataGridViewOldClients.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewOldClients_CellContentDoubleClick);
+            this.dataGridViewOldClients.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewOldClients_CellMouseDoubleClick);
             // 
             // Case
             // 

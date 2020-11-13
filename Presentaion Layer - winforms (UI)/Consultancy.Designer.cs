@@ -53,7 +53,6 @@
             this.Name = "Consultancy";
             this.ShowIcon = false;
             this.Text = "Consultancy";
-            this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

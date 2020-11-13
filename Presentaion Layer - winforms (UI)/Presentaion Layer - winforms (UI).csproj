@@ -73,6 +73,12 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MessageBoxManager.cs" />
+    <Compile Include="NewCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCase.Designer.cs">
+      <DependentUpon>NewCase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCase.resx">
+      <DependentUpon>NewCase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
