@@ -84,21 +84,77 @@ namespace Presentaion_Layer___winforms__UI_
             grpBoxRadio.Location = new Point(823, 17);
             txtSearch.Location = new Point(288, 29);
             btnSearch.Location = new Point(1049, 34);
-            dataGridViewOldClients.DataSource = new List<Client>() 
+            dataGridViewOldClients.DataSource = Data();
+            AdjustColumnsWidth();
+            dataGridViewOldClients.Show();
+        }
+
+        private List<Client> Data()
+        {
+            List<Client> clients = new List<Client>()
             {
-                new Client(){ Address= "التجمع اللأول", Email="a@b.com", Job="مهندس", Name="على", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠", Telphone = "41324432"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
+                new Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
                 new Client(){ Address= "الدقى", Email="a@b.com", Job="عامل", Name="عماد", Notes="سنة ", NumberOfCases = 3, SSN = "١٤٦٧٩٠", Telphone = "١٤٦٧٩٠"}
             };
-            dataGridViewOldClients.Show();
+            return clients;
+        }
+
+        private void AdjustColumnsWidth()
+        {
+
+            int width = 0;
+            for (int i = 0; i < dataGridViewOldClients.Columns.Count; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                    case 4:
+                        width = 245;
+                        break;
+                    case 0:
+                    case 2:
+                    case 7:
+                        width = 300;
+                        break;
+                    case 3:
+                    case 5:
+                        width = 200;
+                        break;
+                    default:
+                        width = 150;
+                        break;
+                }
+                dataGridViewOldClients.Columns[i].Width = width;
+            }
+        }
+
+        private void dataGridViewOldClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridViewOldClients.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            int index = dataGridViewOldClients.Rows.GetNextRow(e.RowIndex, DataGridViewElementStates.Selected);
+            //dataGridViewOldClients.SelectedRows.
+        }
+
+        private void dataGridViewOldClients_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 
     public class Client
     {
-        [DisplayName("رقم المدنية")]
-        public string SSN { get; set; }
+        
         [DisplayName("الاسم")]
         public string Name { get; set; }
+        [DisplayName("رقم المدنية")]
+        public string SSN { get; set; }
         [DisplayName("العنوان")]
         public string Address { get; set; }
         [DisplayName("التليفون")]
@@ -107,11 +163,11 @@ namespace Presentaion_Layer___winforms__UI_
         public string Email { get; set; }
         [DisplayName("المهنة")]
         public string Job { get; set; }
-        [DisplayName("ملاحظات")]
-        public string Notes { get; set; }
+        
         [DisplayName("عدد القضايا")]
         public int NumberOfCases { get; set; }
-
+        [DisplayName("ملاحظات")]
+        public string Notes { get; set; }
         //public static 
     }
 }
