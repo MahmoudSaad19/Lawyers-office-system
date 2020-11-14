@@ -67,7 +67,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Doaa forms\ReceiptForm.Designer.cs" />
-    <Compile Include="FormPool.cs" />
+    <Compile Include="Configurations\FormPool.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,12 +80,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MessageBoxManager.cs" />
+    <Compile Include="Configurations\MessageBoxManager.cs" />
     <Compile Include="NewCase.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewCase.Designer.cs">
       <DependentUpon>NewCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewClient.Designer.cs">
+      <DependentUpon>NewClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
@@ -93,12 +99,18 @@
     <Compile Include="Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="forms\ReceiptForm.cs">
+    <Compile Include="Configurations\Program.cs" />
+    <Compile Include="PaymentInfoEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\ReceiptForm.Designer.cs">
+    <Compile Include="PaymentInfoEditForm.Designer.cs">
+      <DependentUpon>PaymentInfoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptForm.Designer.cs">
       <DependentUpon>ReceiptForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ReceiveFees.cs">
@@ -113,6 +125,7 @@
     <Compile Include="Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
+    <Compile Include="View Models\Client.cs" />
     <EmbeddedResource Include="Case.resx">
       <DependentUpon>Case.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewCase.resx">
       <DependentUpon>NewCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewClient.resx">
+      <DependentUpon>NewClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>

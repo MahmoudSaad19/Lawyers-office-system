@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentaion_Layer___winforms__UI_.View_Models;
 
 namespace Presentaion_Layer___winforms__UI_
 {
@@ -17,11 +18,125 @@ namespace Presentaion_Layer___winforms__UI_
             InitializeComponent();
         }
 
+        private void Consultancy_Load(object sender, EventArgs e)
+        {
+            HideAllElements();
+        }
+        #region Controls Methods
+
         private void btnBack_Click(object sender, EventArgs e)
         {
             HomePage home = FormPool.HomePage;
             home.Show();
             this.Hide();
+            ResetUI();
         }
+
+        private void btnOldClient_Click(object sender, EventArgs e)
+        {
+            ShowAllElements();
+            btnNewClient.Hide();
+            btnOldClient.Hide();
+        }
+
+        private void btnNewClient_Click(object sender, EventArgs e)
+        {
+            NewClient newClient = FormPool.NewClient;
+            newClient.FormClosed += (s, args) => this.Close();
+            newClient.Show();
+            this.Hide();
+            btnNewClient.Hide();
+            btnOldClient.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            grpBoxRadio.Location = new Point(823, 17);
+            txtSearch.Location = new Point(288, 29);
+            btnSearch.Location = new Point(1049, 34);
+            dataGridViewOldClients.DataSource = Client.Data();
+            AdjustColumnsWidth();
+            dataGridViewOldClients.Show();
+        }
+
+        private void dataGridViewOldClients_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            bool dataGridIsValid = dataGridViewOldClients.Rows.Count > 0 && dataGridViewOldClients.Rows[0].Cells.Count > 0 && e.RowIndex > 0 && e.RowIndex <= dataGridViewOldClients.Rows.Count;
+            if (dataGridIsValid)
+            {
+                string ssn = (string)dataGridViewOldClients.Rows[e.RowIndex].Cells[1].Value;
+                MessageBox.Show($"لقد أخترت {ssn} ");
+                openNewCaseForm();
+            }
+
+        }
+
+        #endregion
+
+        #region Helper Methods
+
+        private void ResetUI()
+        {
+            grpBoxRadio.Location = new Point(708, 226);
+            txtSearch.Location = new Point(199, 233);
+            btnSearch.Location = new Point(956, 234);
+            HideAllElements();
+            btnNewClient.Show();
+            btnOldClient.Show();
+        }
+
+        private void HideAllElements()
+        {
+            btnSearch.Hide();
+            grpBoxRadio.Hide();
+            txtSearch.Hide();
+            dataGridViewOldClients.Hide();
+        }
+
+        private void ShowAllElements()
+        {
+            btnSearch.Show();
+            grpBoxRadio.Show();
+            txtSearch.Show();
+        }
+
+        private void openNewCaseForm()
+        {
+            NewCase newCase = FormPool.NewCase;
+            newCase.FormClosed += (s, args) => this.Close();
+            newCase.Show();
+            this.Hide();
+            ResetUI();
+        }
+        private void AdjustColumnsWidth()
+        {
+            int width = 0;
+            for (int i = 0; i < dataGridViewOldClients.Columns.Count; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                    case 4:
+                        width = 245;
+                        break;
+                    case 0:
+                    case 2:
+                    case 7:
+                        width = 300;
+                        break;
+                    case 3:
+                    case 5:
+                        width = 200;
+                        break;
+                    default:
+                        width = 150;
+                        break;
+                }
+                dataGridViewOldClients.Columns[i].Width = width;
+            }
+        }
+
+        #endregion
+
     }
 }

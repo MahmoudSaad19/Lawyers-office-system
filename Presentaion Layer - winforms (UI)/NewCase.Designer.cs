@@ -183,7 +183,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(178, 79);
             this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "تسجيل";
+            this.btnSave.Text = "فتح قضية";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
