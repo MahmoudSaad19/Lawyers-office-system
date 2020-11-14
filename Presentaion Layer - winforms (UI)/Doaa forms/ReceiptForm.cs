@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class Reports : Form
+    public partial class ReceiptForm : Form
     {
-        public Reports()
+        public ReceiptForm()
         {
             InitializeComponent();
+        }
+
+        private void ReceiptForm_Load(object sender, EventArgs e)
+        {
+
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.Fixed3D;
+
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -22,15 +32,6 @@ namespace Presentaion_Layer___winforms__UI_
             HomePage home = FormPool.HomePage;
             home.Show();
             this.Hide();
-        }
-
-        private void Reports_Load(object sender, EventArgs e)
-        {
-            this.TopMost = true;
-
-            this.FormBorderStyle = FormBorderStyle.None;
-
-            this.WindowState = FormWindowState.Maximized;
         }
     }
 }
