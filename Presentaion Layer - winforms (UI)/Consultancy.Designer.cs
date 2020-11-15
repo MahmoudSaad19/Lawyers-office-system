@@ -179,7 +179,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewOldClients.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewOldClients.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridViewOldClients.Location = new System.Drawing.Point(-199, 34);
+            this.dataGridViewOldClients.Location = new System.Drawing.Point(0, 116);
             this.dataGridViewOldClients.MultiSelect = false;
             this.dataGridViewOldClients.Name = "dataGridViewOldClients";
             this.dataGridViewOldClients.ReadOnly = true;

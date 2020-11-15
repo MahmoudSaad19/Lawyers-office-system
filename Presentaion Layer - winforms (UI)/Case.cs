@@ -25,7 +25,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void Case_Load(object sender, EventArgs e)
         {
-            HideAllElements();
+            ResetUI();
         }
 
         #endregion
@@ -85,9 +85,11 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ResetUI()
         {
-            grpBoxRadio.Location = new Point(708, 226);
-            txtSearch.Location = new Point(199, 233);
-            btnSearch.Location = new Point(956, 234);
+            int width = (this.Width - 900) / 2;
+            int height = (this.Height - 100) / 2;
+            grpBoxRadio.Location = new Point(width + 508, height + 26);
+            txtSearch.Location = new Point(width , height + 33);
+            btnSearch.Location = new Point(width + 756, height + 34);
             HideAllElements();
             btnNewClient.Show();
             btnOldClient.Show();

@@ -49,7 +49,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            Payment payment = FormPool.Payment;
+            ReceiptForm payment = FormPool.ReceiptForm;
             payment.FormClosed += (s, args) => this.Close();
             payment.Show();
             this.Hide();
@@ -57,9 +57,9 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void btnRecieve_Click(object sender, EventArgs e)
         {
-            ReceiveFees fees = FormPool.Fees;
-            fees.FormClosed += (s, args) => this.Close();
-            fees.Show();
+            PaymentInfoEditForm editFees = FormPool.PaymentInfo;
+            editFees.FormClosed += (s, args) => this.Close();
+            editFees.Show();
             this.Hide();
         }
 
