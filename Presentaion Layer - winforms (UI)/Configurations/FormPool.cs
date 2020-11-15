@@ -17,6 +17,7 @@ namespace Presentaion_Layer___winforms__UI_
         public static NewCase NewCase { get; } = new NewCase();
         public static NewClient NewClient { get; } = new NewClient();
         public static ReceiptForm ReceiptForm { get; } = new ReceiptForm();
+        public static PaymentInfoEditForm PaymentInfo { get; } = new PaymentInfoEditForm();
 
 
         //static FormPool()
