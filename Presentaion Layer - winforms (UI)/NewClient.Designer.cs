@@ -49,6 +49,27 @@
             this.radOpenCase = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.radDontOpenCase = new System.Windows.Forms.RadioButton();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.الرئيسيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.العملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShowClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.Cases = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddCase = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShowCase = new System.Windows.Forms.ToolStripMenuItem();
+            this.الاستشاراتToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddConsultaion = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShowConsultaion = new System.Windows.Forms.ToolStripMenuItem();
+            this.سنداتالقبضToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddSanadKabd = new System.Windows.Forms.ToolStripMenuItem();
+            this.عرضسنداتالقبضToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.سنداتالصرفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddSanadSarf = new System.Windows.Forms.ToolStripMenuItem();
+            this.عرضسنداتالصرفToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnterReportsMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.بياناتالمكتبToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblClientName
@@ -329,11 +350,161 @@
             this.radDontOpenCase.Text = "لا";
             this.radDontOpenCase.UseVisualStyleBackColor = false;
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.الرئيسيةToolStripMenuItem,
+            this.العملاءToolStripMenuItem,
+            this.Cases,
+            this.الاستشاراتToolStripMenuItem,
+            this.سنداتالقبضToolStripMenuItem,
+            this.سنداتالصرفToolStripMenuItem,
+            this.EnterReportsMenu,
+            this.بياناتالمكتبToolStripMenuItem,
+            this.Exit});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip2.Size = new System.Drawing.Size(968, 36);
+            this.menuStrip2.TabIndex = 27;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // الرئيسيةToolStripMenuItem
+            // 
+            this.الرئيسيةToolStripMenuItem.Name = "الرئيسيةToolStripMenuItem";
+            this.الرئيسيةToolStripMenuItem.Size = new System.Drawing.Size(90, 32);
+            this.الرئيسيةToolStripMenuItem.Text = "الرئيسية";
+            // 
+            // العملاءToolStripMenuItem
+            // 
+            this.العملاءToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddClient,
+            this.ShowClient});
+            this.العملاءToolStripMenuItem.Name = "العملاءToolStripMenuItem";
+            this.العملاءToolStripMenuItem.Size = new System.Drawing.Size(80, 32);
+            this.العملاءToolStripMenuItem.Text = "العملاء";
+            // 
+            // AddClient
+            // 
+            this.AddClient.Name = "AddClient";
+            this.AddClient.Size = new System.Drawing.Size(190, 32);
+            this.AddClient.Text = "اضافة عميل";
+            // 
+            // ShowClient
+            // 
+            this.ShowClient.Name = "ShowClient";
+            this.ShowClient.Size = new System.Drawing.Size(190, 32);
+            this.ShowClient.Text = "عرض العملاء";
+            // 
+            // Cases
+            // 
+            this.Cases.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddCase,
+            this.ShowCase});
+            this.Cases.Name = "Cases";
+            this.Cases.Size = new System.Drawing.Size(83, 32);
+            this.Cases.Text = "القضايا";
+            // 
+            // AddCase
+            // 
+            this.AddCase.Name = "AddCase";
+            this.AddCase.Size = new System.Drawing.Size(193, 32);
+            this.AddCase.Text = "اضافة قضية";
+            // 
+            // ShowCase
+            // 
+            this.ShowCase.Name = "ShowCase";
+            this.ShowCase.Size = new System.Drawing.Size(193, 32);
+            this.ShowCase.Text = "عرض القضايا";
+            // 
+            // الاستشاراتToolStripMenuItem
+            // 
+            this.الاستشاراتToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddConsultaion,
+            this.ShowConsultaion});
+            this.الاستشاراتToolStripMenuItem.Name = "الاستشاراتToolStripMenuItem";
+            this.الاستشاراتToolStripMenuItem.Size = new System.Drawing.Size(116, 32);
+            this.الاستشاراتToolStripMenuItem.Text = "الاستشارات";
+            // 
+            // AddConsultaion
+            // 
+            this.AddConsultaion.Name = "AddConsultaion";
+            this.AddConsultaion.Size = new System.Drawing.Size(226, 32);
+            this.AddConsultaion.Text = "اضافة استشارة";
+            // 
+            // ShowConsultaion
+            // 
+            this.ShowConsultaion.Name = "ShowConsultaion";
+            this.ShowConsultaion.Size = new System.Drawing.Size(226, 32);
+            this.ShowConsultaion.Text = "عرض الاستشارات";
+            // 
+            // سنداتالقبضToolStripMenuItem
+            // 
+            this.سنداتالقبضToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddSanadKabd,
+            this.عرضسنداتالقبضToolStripMenuItem});
+            this.سنداتالقبضToolStripMenuItem.Name = "سنداتالقبضToolStripMenuItem";
+            this.سنداتالقبضToolStripMenuItem.Size = new System.Drawing.Size(142, 32);
+            this.سنداتالقبضToolStripMenuItem.Text = "سندات القبض";
+            // 
+            // AddSanadKabd
+            // 
+            this.AddSanadKabd.Name = "AddSanadKabd";
+            this.AddSanadKabd.Size = new System.Drawing.Size(252, 32);
+            this.AddSanadKabd.Text = "اضافة سند قبض";
+            // 
+            // عرضسنداتالقبضToolStripMenuItem
+            // 
+            this.عرضسنداتالقبضToolStripMenuItem.Name = "عرضسنداتالقبضToolStripMenuItem";
+            this.عرضسنداتالقبضToolStripMenuItem.Size = new System.Drawing.Size(252, 32);
+            this.عرضسنداتالقبضToolStripMenuItem.Text = "عرض سندات القبض";
+            // 
+            // سنداتالصرفToolStripMenuItem
+            // 
+            this.سنداتالصرفToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddSanadSarf,
+            this.عرضسنداتالصرفToolStripMenuItem});
+            this.سنداتالصرفToolStripMenuItem.Name = "سنداتالصرفToolStripMenuItem";
+            this.سنداتالصرفToolStripMenuItem.Size = new System.Drawing.Size(142, 32);
+            this.سنداتالصرفToolStripMenuItem.Text = "سندات الصرف";
+            // 
+            // AddSanadSarf
+            // 
+            this.AddSanadSarf.Name = "AddSanadSarf";
+            this.AddSanadSarf.Size = new System.Drawing.Size(252, 32);
+            this.AddSanadSarf.Text = "اضافة سند صرف";
+            // 
+            // عرضسنداتالصرفToolStripMenuItem
+            // 
+            this.عرضسنداتالصرفToolStripMenuItem.Name = "عرضسنداتالصرفToolStripMenuItem";
+            this.عرضسنداتالصرفToolStripMenuItem.Size = new System.Drawing.Size(252, 32);
+            this.عرضسنداتالصرفToolStripMenuItem.Text = "عرض سندات الصرف";
+            // 
+            // EnterReportsMenu
+            // 
+            this.EnterReportsMenu.Name = "EnterReportsMenu";
+            this.EnterReportsMenu.Size = new System.Drawing.Size(83, 32);
+            this.EnterReportsMenu.Text = "التقارير";
+            // 
+            // بياناتالمكتبToolStripMenuItem
+            // 
+            this.بياناتالمكتبToolStripMenuItem.Name = "بياناتالمكتبToolStripMenuItem";
+            this.بياناتالمكتبToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
+            this.بياناتالمكتبToolStripMenuItem.Text = "بيانات المكتب";
+            // 
+            // Exit
+            // 
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(66, 32);
+            this.Exit.Text = "خروج";
+            // 
             // NewClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 585);
+            this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.radDontOpenCase);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radOpenCase);
@@ -360,7 +531,10 @@
             this.Name = "NewClient";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewClient";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.NewClient_Load);
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +562,25 @@
         private System.Windows.Forms.RadioButton radOpenCase;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radDontOpenCase;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem الرئيسيةToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddClient;
+        private System.Windows.Forms.ToolStripMenuItem ShowClient;
+        private System.Windows.Forms.ToolStripMenuItem Cases;
+        private System.Windows.Forms.ToolStripMenuItem AddCase;
+        private System.Windows.Forms.ToolStripMenuItem ShowCase;
+        private System.Windows.Forms.ToolStripMenuItem الاستشاراتToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddConsultaion;
+        private System.Windows.Forms.ToolStripMenuItem ShowConsultaion;
+        private System.Windows.Forms.ToolStripMenuItem سنداتالقبضToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddSanadKabd;
+        private System.Windows.Forms.ToolStripMenuItem عرضسنداتالقبضToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem سنداتالصرفToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddSanadSarf;
+        private System.Windows.Forms.ToolStripMenuItem عرضسنداتالصرفToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnterReportsMenu;
+        private System.Windows.Forms.ToolStripMenuItem بياناتالمكتبToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Exit;
     }
 }

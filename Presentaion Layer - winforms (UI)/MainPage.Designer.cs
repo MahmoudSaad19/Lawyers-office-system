@@ -319,13 +319,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(958, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.QuickReportsPanel);
             this.Controls.Add(this.FooterPanel);
             this.Controls.Add(this.menuStrip2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.FooterPanel.ResumeLayout(false);
             this.FooterPanel.PerformLayout();
