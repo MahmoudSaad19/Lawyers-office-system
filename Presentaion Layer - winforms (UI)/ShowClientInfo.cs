@@ -27,7 +27,9 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ShowClientInfo_Load(object sender, EventArgs e)
         {
-
+            ShowClientInfo clientInfo = FormPool.ShowClientInfo;
+            //clientInfo.Width = this.Width / 2;
+            //clientInfo.Height = this.Height / 2;
         }
     }
 }

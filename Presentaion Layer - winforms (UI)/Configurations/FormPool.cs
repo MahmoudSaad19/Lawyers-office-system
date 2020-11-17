@@ -29,6 +29,7 @@ namespace Presentaion_Layer___winforms__UI_
         public static EditClientConsultaion EditClientConsultaion { get; } = new EditClientConsultaion();
 
         public static SearchForClient SearchForClient{ get; } = new SearchForClient();
+        public static SanadKabdPaymentEdit SanadKabdPaymentEdit{ get; } = new SanadKabdPaymentEdit();
     //static FormPool()
     //{
     //    if (HomePage is null)

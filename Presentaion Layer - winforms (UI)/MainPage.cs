@@ -24,12 +24,6 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void MainPage_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
-
-            this.FormBorderStyle = FormBorderStyle.Fixed3D;
-
-            this.WindowState = FormWindowState.Maximized;
-             
             //QuickReportsPanel.Hide();
         }
 
@@ -58,8 +52,8 @@ namespace Presentaion_Layer___winforms__UI_
         private void btnAddClient_Click(object sender, EventArgs e)
         {
             NewClient newClient = FormPool.NewClient;
-            this.Hide();
             newClient.Show();
+            this.Hide();
             newClient.FormClosed += (s, args) => this.Close();
 
         }
@@ -115,15 +109,14 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DialogResult confirmationMessage = MessageBox.Show("هل تريد الخروج؟", "تنبيه", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //this.Hide();
+            DialogResult confirmationMessage = MessageBox.Show("هل تريد الخروج؟", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-            if (confirmationMessage == DialogResult.Yes)
+            if (confirmationMessage == DialogResult.OK)
             {
                 this.Close();
             }
-            else
-                this.Show();
+           
         }
 
         private void اضافةعميلToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,9 +127,10 @@ namespace Presentaion_Layer___winforms__UI_
         private void AddClient_Click(object sender, EventArgs e)
         {
             NewClient newClient = FormPool.NewClient;
-            this.Hide();
             newClient.Show();
             newClient.FormClosed += (s, args) => this.Close();
+            this.Hide();
+
         }
 
         private void ShowClient_Click(object sender, EventArgs e)
@@ -200,5 +194,33 @@ namespace Presentaion_Layer___winforms__UI_
             clientCases.Show();
             this.Hide();
         }
+
+        private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void عرضسنداتالقبضToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
+            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
+            sanadKabdPaymentEdit.Show();
+            this.Hide();
+        }
+
+        private void عرضسنداتالصرفToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
+            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
+            sanadKabdPaymentEdit.Show();
+            this.Hide();
+
+        }
+
+        private void بياناتالمكتبToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

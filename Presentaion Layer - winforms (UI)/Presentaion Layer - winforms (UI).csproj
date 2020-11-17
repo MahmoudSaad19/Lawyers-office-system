@@ -213,6 +213,9 @@
     <EmbeddedResource Include="SanadSarf.resx">
       <DependentUpon>SanadSarf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowClientConsultation.resx">
+      <DependentUpon>ShowClientConsultation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShowClientInfo.resx">
       <DependentUpon>ShowClientInfo.cs</DependentUpon>
     </EmbeddedResource>

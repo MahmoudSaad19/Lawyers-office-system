@@ -16,5 +16,10 @@ namespace Presentaion_Layer___winforms__UI_
         {
             InitializeComponent();
         }
+
+        private void ShowClientConsultation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

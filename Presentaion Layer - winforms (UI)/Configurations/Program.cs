@@ -15,8 +15,8 @@ namespace Presentaion_Layer___winforms__UI_
         [STAThread]
         static void Main()
         {
-            MessageBoxManager.Yes = "نعم";
-            MessageBoxManager.No = "لا";
+            MessageBoxManager.OK = "نعم";
+            MessageBoxManager.Cancel = "لا";
             MessageBoxManager.Register();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

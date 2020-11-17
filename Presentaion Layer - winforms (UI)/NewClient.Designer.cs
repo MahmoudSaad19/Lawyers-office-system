@@ -78,7 +78,7 @@
             this.lblClientName.BackColor = System.Drawing.Color.SteelBlue;
             this.lblClientName.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblClientName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblClientName.Location = new System.Drawing.Point(544, 53);
+            this.lblClientName.Location = new System.Drawing.Point(685, 51);
             this.lblClientName.Name = "lblClientName";
             this.lblClientName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblClientName.Size = new System.Drawing.Size(128, 48);
@@ -91,7 +91,7 @@
             this.txtClientName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtClientName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtClientName.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtClientName.Location = new System.Drawing.Point(41, 53);
+            this.txtClientName.Location = new System.Drawing.Point(182, 51);
             this.txtClientName.Name = "txtClientName";
             this.txtClientName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtClientName.Size = new System.Drawing.Size(473, 48);
@@ -105,7 +105,7 @@
             this.lblHeader.BackColor = System.Drawing.Color.Transparent;
             this.lblHeader.Font = new System.Drawing.Font("Traditional Arabic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.Blue;
-            this.lblHeader.Location = new System.Drawing.Point(202, -10);
+            this.lblHeader.Location = new System.Drawing.Point(243, -10);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblHeader.Size = new System.Drawing.Size(212, 54);
@@ -119,7 +119,7 @@
             this.lblNotes.BackColor = System.Drawing.Color.SteelBlue;
             this.lblNotes.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblNotes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNotes.Location = new System.Drawing.Point(544, 480);
+            this.lblNotes.Location = new System.Drawing.Point(685, 478);
             this.lblNotes.Name = "lblNotes";
             this.lblNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblNotes.Size = new System.Drawing.Size(128, 48);
@@ -133,7 +133,7 @@
             this.lblJob.BackColor = System.Drawing.Color.SteelBlue;
             this.lblJob.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblJob.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblJob.Location = new System.Drawing.Point(544, 419);
+            this.lblJob.Location = new System.Drawing.Point(685, 417);
             this.lblJob.Name = "lblJob";
             this.lblJob.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblJob.Size = new System.Drawing.Size(128, 48);
@@ -147,7 +147,7 @@
             this.lblTel2.BackColor = System.Drawing.Color.SteelBlue;
             this.lblTel2.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblTel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTel2.Location = new System.Drawing.Point(544, 358);
+            this.lblTel2.Location = new System.Drawing.Point(685, 356);
             this.lblTel2.Name = "lblTel2";
             this.lblTel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTel2.Size = new System.Drawing.Size(128, 48);
@@ -161,7 +161,7 @@
             this.lblTel1.BackColor = System.Drawing.Color.SteelBlue;
             this.lblTel1.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblTel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTel1.Location = new System.Drawing.Point(544, 297);
+            this.lblTel1.Location = new System.Drawing.Point(685, 295);
             this.lblTel1.Name = "lblTel1";
             this.lblTel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTel1.Size = new System.Drawing.Size(128, 48);
@@ -175,7 +175,7 @@
             this.lblEmail.BackColor = System.Drawing.Color.SteelBlue;
             this.lblEmail.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblEmail.Location = new System.Drawing.Point(544, 236);
+            this.lblEmail.Location = new System.Drawing.Point(685, 234);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblEmail.Size = new System.Drawing.Size(128, 48);
@@ -189,7 +189,7 @@
             this.lblAddress.BackColor = System.Drawing.Color.SteelBlue;
             this.lblAddress.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAddress.Location = new System.Drawing.Point(544, 175);
+            this.lblAddress.Location = new System.Drawing.Point(685, 173);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblAddress.Size = new System.Drawing.Size(128, 48);
@@ -203,7 +203,7 @@
             this.lblSSN.BackColor = System.Drawing.Color.SteelBlue;
             this.lblSSN.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblSSN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSSN.Location = new System.Drawing.Point(544, 114);
+            this.lblSSN.Location = new System.Drawing.Point(685, 112);
             this.lblSSN.Name = "lblSSN";
             this.lblSSN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblSSN.Size = new System.Drawing.Size(128, 48);
@@ -216,7 +216,7 @@
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtEmail.Location = new System.Drawing.Point(41, 236);
+            this.txtEmail.Location = new System.Drawing.Point(182, 234);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtEmail.Size = new System.Drawing.Size(473, 48);
@@ -228,7 +228,7 @@
             this.txtJob.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtJob.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtJob.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtJob.Location = new System.Drawing.Point(41, 419);
+            this.txtJob.Location = new System.Drawing.Point(182, 417);
             this.txtJob.Name = "txtJob";
             this.txtJob.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtJob.Size = new System.Drawing.Size(473, 48);
@@ -240,7 +240,7 @@
             this.txtNotes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNotes.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtNotes.Location = new System.Drawing.Point(41, 480);
+            this.txtNotes.Location = new System.Drawing.Point(182, 478);
             this.txtNotes.Name = "txtNotes";
             this.txtNotes.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtNotes.Size = new System.Drawing.Size(473, 48);
@@ -252,7 +252,7 @@
             this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAddress.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtAddress.Location = new System.Drawing.Point(41, 175);
+            this.txtAddress.Location = new System.Drawing.Point(182, 173);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtAddress.Size = new System.Drawing.Size(473, 48);
@@ -264,7 +264,7 @@
             this.txtTel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTel1.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtTel1.Location = new System.Drawing.Point(41, 297);
+            this.txtTel1.Location = new System.Drawing.Point(182, 295);
             this.txtTel1.Name = "txtTel1";
             this.txtTel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTel1.Size = new System.Drawing.Size(473, 48);
@@ -276,7 +276,7 @@
             this.txtTel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTel2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTel2.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtTel2.Location = new System.Drawing.Point(41, 358);
+            this.txtTel2.Location = new System.Drawing.Point(182, 356);
             this.txtTel2.Name = "txtTel2";
             this.txtTel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTel2.Size = new System.Drawing.Size(473, 48);
@@ -288,7 +288,7 @@
             this.txtSSN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSSN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSSN.Font = new System.Drawing.Font("Traditional Arabic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtSSN.Location = new System.Drawing.Point(41, 114);
+            this.txtSSN.Location = new System.Drawing.Point(182, 112);
             this.txtSSN.Name = "txtSSN";
             this.txtSSN.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSSN.Size = new System.Drawing.Size(473, 48);
@@ -302,7 +302,7 @@
             this.btnSaveClient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSaveClient.Font = new System.Drawing.Font("Arabic Typesetting", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSaveClient.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnSaveClient.Location = new System.Drawing.Point(80, 534);
+            this.btnSaveClient.Location = new System.Drawing.Point(460, 565);
             this.btnSaveClient.Name = "btnSaveClient";
             this.btnSaveClient.Size = new System.Drawing.Size(129, 44);
             this.btnSaveClient.TabIndex = 23;
@@ -312,6 +312,7 @@
             // 
             // radOpenCase
             // 
+            this.radOpenCase.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radOpenCase.AutoSize = true;
             this.radOpenCase.BackColor = System.Drawing.Color.SteelBlue;
             this.radOpenCase.Font = new System.Drawing.Font("Arabic Typesetting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -326,6 +327,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.SteelBlue;
             this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -338,6 +340,7 @@
             // 
             // radDontOpenCase
             // 
+            this.radDontOpenCase.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radDontOpenCase.AutoSize = true;
             this.radDontOpenCase.BackColor = System.Drawing.Color.SteelBlue;
             this.radDontOpenCase.Font = new System.Drawing.Font("Arabic Typesetting", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,7 +369,7 @@
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip2.Size = new System.Drawing.Size(968, 36);
+            this.menuStrip2.Size = new System.Drawing.Size(1051, 36);
             this.menuStrip2.TabIndex = 27;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -375,6 +378,7 @@
             this.الرئيسيةToolStripMenuItem.Name = "الرئيسيةToolStripMenuItem";
             this.الرئيسيةToolStripMenuItem.Size = new System.Drawing.Size(90, 32);
             this.الرئيسيةToolStripMenuItem.Text = "الرئيسية";
+            this.الرئيسيةToolStripMenuItem.Click += new System.EventHandler(this.الرئيسيةToolStripMenuItem_Click);
             // 
             // العملاءToolStripMenuItem
             // 
@@ -390,12 +394,14 @@
             this.AddClient.Name = "AddClient";
             this.AddClient.Size = new System.Drawing.Size(190, 32);
             this.AddClient.Text = "اضافة عميل";
+            this.AddClient.Click += new System.EventHandler(this.AddClient_Click);
             // 
             // ShowClient
             // 
             this.ShowClient.Name = "ShowClient";
             this.ShowClient.Size = new System.Drawing.Size(190, 32);
             this.ShowClient.Text = "عرض العملاء";
+            this.ShowClient.Click += new System.EventHandler(this.ShowClient_Click);
             // 
             // Cases
             // 
@@ -411,12 +417,14 @@
             this.AddCase.Name = "AddCase";
             this.AddCase.Size = new System.Drawing.Size(193, 32);
             this.AddCase.Text = "اضافة قضية";
+            this.AddCase.Click += new System.EventHandler(this.AddCase_Click);
             // 
             // ShowCase
             // 
             this.ShowCase.Name = "ShowCase";
             this.ShowCase.Size = new System.Drawing.Size(193, 32);
             this.ShowCase.Text = "عرض القضايا";
+            this.ShowCase.Click += new System.EventHandler(this.ShowCase_Click);
             // 
             // الاستشاراتToolStripMenuItem
             // 
@@ -432,12 +440,14 @@
             this.AddConsultaion.Name = "AddConsultaion";
             this.AddConsultaion.Size = new System.Drawing.Size(226, 32);
             this.AddConsultaion.Text = "اضافة استشارة";
+            this.AddConsultaion.Click += new System.EventHandler(this.AddConsultaion_Click);
             // 
             // ShowConsultaion
             // 
             this.ShowConsultaion.Name = "ShowConsultaion";
             this.ShowConsultaion.Size = new System.Drawing.Size(226, 32);
             this.ShowConsultaion.Text = "عرض الاستشارات";
+            this.ShowConsultaion.Click += new System.EventHandler(this.ShowConsultaion_Click);
             // 
             // سنداتالقبضToolStripMenuItem
             // 
@@ -453,12 +463,14 @@
             this.AddSanadKabd.Name = "AddSanadKabd";
             this.AddSanadKabd.Size = new System.Drawing.Size(252, 32);
             this.AddSanadKabd.Text = "اضافة سند قبض";
+            this.AddSanadKabd.Click += new System.EventHandler(this.AddSanadKabd_Click);
             // 
             // عرضسنداتالقبضToolStripMenuItem
             // 
             this.عرضسنداتالقبضToolStripMenuItem.Name = "عرضسنداتالقبضToolStripMenuItem";
             this.عرضسنداتالقبضToolStripMenuItem.Size = new System.Drawing.Size(252, 32);
             this.عرضسنداتالقبضToolStripMenuItem.Text = "عرض سندات القبض";
+            this.عرضسنداتالقبضToolStripMenuItem.Click += new System.EventHandler(this.عرضسنداتالقبضToolStripMenuItem_Click);
             // 
             // سنداتالصرفToolStripMenuItem
             // 
@@ -474,18 +486,21 @@
             this.AddSanadSarf.Name = "AddSanadSarf";
             this.AddSanadSarf.Size = new System.Drawing.Size(252, 32);
             this.AddSanadSarf.Text = "اضافة سند صرف";
+            this.AddSanadSarf.Click += new System.EventHandler(this.AddSanadSarf_Click);
             // 
             // عرضسنداتالصرفToolStripMenuItem
             // 
             this.عرضسنداتالصرفToolStripMenuItem.Name = "عرضسنداتالصرفToolStripMenuItem";
             this.عرضسنداتالصرفToolStripMenuItem.Size = new System.Drawing.Size(252, 32);
             this.عرضسنداتالصرفToolStripMenuItem.Text = "عرض سندات الصرف";
+            this.عرضسنداتالصرفToolStripMenuItem.Click += new System.EventHandler(this.عرضسنداتالصرفToolStripMenuItem_Click);
             // 
             // EnterReportsMenu
             // 
             this.EnterReportsMenu.Name = "EnterReportsMenu";
             this.EnterReportsMenu.Size = new System.Drawing.Size(83, 32);
             this.EnterReportsMenu.Text = "التقارير";
+            this.EnterReportsMenu.Click += new System.EventHandler(this.EnterReportsMenu_Click);
             // 
             // بياناتالمكتبToolStripMenuItem
             // 
@@ -498,12 +513,14 @@
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(66, 32);
             this.Exit.Text = "خروج";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // NewClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 585);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1051, 611);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.radDontOpenCase);
             this.Controls.Add(this.label1);
