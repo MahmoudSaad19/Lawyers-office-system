@@ -59,14 +59,6 @@
     <Compile Include="Consultancy.Designer.cs">
       <DependentUpon>Consultancy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doaa forms\PaymentInfoEditForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Doaa forms\PaymentInfoEditForm.Designer.cs" />
-    <Compile Include="Doaa forms\ReceiptForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Doaa forms\ReceiptForm.Designer.cs" />
     <Compile Include="FormPool.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -119,8 +111,6 @@
     <EmbeddedResource Include="Consultancy.resx">
       <DependentUpon>Consultancy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doaa forms\PaymentInfoEditForm.resx" />
-    <EmbeddedResource Include="Doaa forms\ReceiptForm.resx" />
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
