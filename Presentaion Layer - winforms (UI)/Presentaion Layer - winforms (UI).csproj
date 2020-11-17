@@ -53,16 +53,48 @@
     <Compile Include="Case.Designer.cs">
       <DependentUpon>Case.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditClientCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientCase.Designer.cs">
+      <DependentUpon>EditClientCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientConsultaion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientConsultaion.Designer.cs">
+      <DependentUpon>EditClientConsultaion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForClient.Designer.cs">
+      <DependentUpon>SearchForClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowClientCasesOrConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowClientCasesOrConsultation.Designer.cs">
+      <DependentUpon>ShowClientCasesOrConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanadKabdEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanadKabdEntryForm.Designer.cs">
+      <DependentUpon>SanadKabdEntryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultancy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Consultancy.Designer.cs">
       <DependentUpon>Consultancy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doaa forms\PaymentInfoEditForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Doaa forms\PaymentInfoEditForm.Designer.cs" />
     <Compile Include="Doaa forms\ReceiptForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,31 +125,19 @@
     <Compile Include="NewClient.Designer.cs">
       <DependentUpon>NewClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Payment.Designer.cs">
-      <DependentUpon>Payment.cs</DependentUpon>
-    </Compile>
     <Compile Include="Configurations\Program.cs" />
-    <Compile Include="PaymentInfoEditForm.cs">
+    <Compile Include="SanadKabdPaymentEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaymentInfoEditForm.Designer.cs">
-      <DependentUpon>PaymentInfoEditForm.cs</DependentUpon>
+    <Compile Include="SanadKabdPaymentEdit.Designer.cs">
+      <DependentUpon>SanadKabdPaymentEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReceiptForm.cs">
+    <Compile Include="SanadSarf.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReceiptForm.Designer.cs">
-      <DependentUpon>ReceiptForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ReceiveFees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReceiveFees.Designer.cs">
-      <DependentUpon>ReceiveFees.cs</DependentUpon>
+    <Compile Include="SanadSarf.Designer.cs">
+      <DependentUpon>SanadSarf.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports.cs">
       <SubType>Form</SubType>
@@ -125,14 +145,43 @@
     <Compile Include="Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowClientConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowClientConsultation.Designer.cs">
+      <DependentUpon>ShowClientConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowClientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowClientInfo.Designer.cs">
+      <DependentUpon>ShowClientInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="View Models\Client.cs" />
     <EmbeddedResource Include="Case.resx">
       <DependentUpon>Case.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditClientCase.resx">
+      <DependentUpon>EditClientCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientConsultaion.resx">
+      <DependentUpon>EditClientConsultaion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForClient.resx">
+      <DependentUpon>SearchForClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowClientCasesOrConsultation.resx">
+      <DependentUpon>ShowClientCasesOrConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanadKabdEntryForm.resx">
+      <DependentUpon>SanadKabdEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultancy.resx">
       <DependentUpon>Consultancy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doaa forms\PaymentInfoEditForm.resx" />
     <EmbeddedResource Include="Doaa forms\ReceiptForm.resx" />
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -146,9 +195,6 @@
     <EmbeddedResource Include="NewClient.resx">
       <DependentUpon>NewClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Payment.resx">
-      <DependentUpon>Payment.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,11 +204,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReceiveFees.resx">
-      <DependentUpon>ReceiveFees.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanadKabdPaymentEdit.resx">
+      <DependentUpon>SanadKabdPaymentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanadSarf.resx">
+      <DependentUpon>SanadSarf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowClientInfo.resx">
+      <DependentUpon>ShowClientInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

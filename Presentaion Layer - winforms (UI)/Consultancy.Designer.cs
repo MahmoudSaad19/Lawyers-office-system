@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnBack = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnNewClient = new System.Windows.Forms.Button();
             this.btnOldClient = new System.Windows.Forms.Button();
@@ -45,17 +44,6 @@
             this.grpBoxRadio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOldClients)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBack
-            // 
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(90, 46);
-            this.btnBack.TabIndex = 3;
-            this.btnBack.Text = "<--";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // txtSearch
             // 
@@ -215,7 +203,6 @@
             this.Controls.Add(this.btnNewClient);
             this.Controls.Add(this.grpBoxRadio);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnOldClient);
             this.Controls.Add(this.dataGridViewOldClients);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -233,8 +220,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnNewClient;
         private System.Windows.Forms.Button btnOldClient;

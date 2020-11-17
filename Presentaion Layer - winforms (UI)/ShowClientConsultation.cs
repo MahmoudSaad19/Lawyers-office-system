@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class Login : Form
+    public partial class ShowClientConsultation : Form
     {
-        public Login()
+        public ShowClientConsultation()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            MainPage mainPage = FormPool.MainPage;
-            this.Hide();
-            mainPage.Show();
-            mainPage.FormClosed += (s, args) => this.Close();
         }
     }
 }

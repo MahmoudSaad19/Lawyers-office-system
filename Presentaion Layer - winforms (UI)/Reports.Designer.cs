@@ -62,7 +62,7 @@
             this.btnCreateReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
             this.btnCreateReport.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnCreateReport.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCreateReport.Location = new System.Drawing.Point(38, 64);
+            this.btnCreateReport.Location = new System.Drawing.Point(35, 72);
             this.btnCreateReport.Name = "btnCreateReport";
             this.btnCreateReport.Size = new System.Drawing.Size(132, 41);
             this.btnCreateReport.TabIndex = 3;

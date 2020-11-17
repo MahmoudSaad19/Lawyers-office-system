@@ -49,17 +49,17 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
-            ReceiptForm payment = FormPool.ReceiptForm;
-            payment.FormClosed += (s, args) => this.Close();
-            payment.Show();
+            SanadKabdEntryForm receiptForm = FormPool.CatchReceiptForm;
+            receiptForm.FormClosed += (s, args) => this.Close();
+            receiptForm.Show();
             this.Hide();
         }
 
         private void btnRecieve_Click(object sender, EventArgs e)
         {
-            PaymentInfoEditForm editFees = FormPool.PaymentInfo;
-            editFees.FormClosed += (s, args) => this.Close();
-            editFees.Show();
+            SanadSarf receiptForm = FormPool.ReceiptForm;
+            receiptForm.FormClosed += (s, args) => this.Close();
+            receiptForm.Show();
             this.Hide();
         }
 

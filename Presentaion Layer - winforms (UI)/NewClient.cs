@@ -26,10 +26,29 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void btnSaveClient_Click(object sender, EventArgs e)
         {
-            NewCase newCase = FormPool.NewCase;
-            newCase.FormClosed += (s, args) => this.Close();
-            newCase.Show();
-            this.Hide();
+
+            if(radOpenCase.Checked)
+            {
+                
+                NewCase newCase = FormPool.NewCase;
+                newCase.FormClosed += (s, args) => this.Close();
+                this.Hide();
+                newCase.Show();
+                this.Hide();
+            }
+            else
+            {
+                MainPage mainPage = FormPool.MainPage;
+                mainPage.Show();
+                this.Hide();
+                mainPage.FormClosed += (s, args) => this.Close();
+            }
+           
+        }
+
+        private void NewClient_Load(object sender, EventArgs e)
+        {
+            this.MaximumSize = this.Size;
         }
     }
 }

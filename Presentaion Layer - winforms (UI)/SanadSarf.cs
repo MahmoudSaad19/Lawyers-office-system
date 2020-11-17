@@ -10,28 +10,35 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class Reports : Form
+    public partial class SanadSarf : Form
     {
-        public Reports()
+        public SanadSarf()
         {
             InitializeComponent();
         }
 
+        private void ReceiptForm_Load(object sender, EventArgs e)
+        {
+
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.Fixed3D;
+
+            this.WindowState = FormWindowState.Maximized;
+            panel1.Hide();
+        }
+
         private void btnBack_Click(object sender, EventArgs e)
         {
-            MainPage mainPage = new MainPage();
+            MainPage mainPage = FormPool.MainPage;
             mainPage.FormClosed += (s, args) => this.Close();
             mainPage.Show();
             this.Hide();
         }
 
-        private void Reports_Load(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            this.TopMost = true;
-
-            this.FormBorderStyle = FormBorderStyle.None;
-
-            this.WindowState = FormWindowState.Maximized;
+            panel1.Show();
         }
     }
 }

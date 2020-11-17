@@ -24,7 +24,11 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            
+             MainPage mainPage = FormPool.MainPage;
+            mainPage.Show();
+            this.Hide();
+            mainPage.FormClosed += (s, args) => this.Close();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -32,6 +36,56 @@ namespace Presentaion_Layer___winforms__UI_
             HomePage home = FormPool.HomePage;
             home.Show();
             this.Hide();
+        }
+
+        private void txtContractType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNotes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFees_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLawyerFees_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCaseName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCaseName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNotes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLawyerFees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblContractType_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

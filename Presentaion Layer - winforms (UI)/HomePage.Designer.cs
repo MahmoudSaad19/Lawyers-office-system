@@ -51,9 +51,9 @@
             this.btnConsultant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultant.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultant.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnConsultant.Location = new System.Drawing.Point(456, 114);
+            this.btnConsultant.Location = new System.Drawing.Point(311, 97);
             this.btnConsultant.Name = "btnConsultant";
-            this.btnConsultant.Size = new System.Drawing.Size(324, 159);
+            this.btnConsultant.Size = new System.Drawing.Size(324, 88);
             this.btnConsultant.TabIndex = 1;
             this.btnConsultant.Text = "طلب أستشارة";
             this.btnConsultant.UseVisualStyleBackColor = false;
@@ -72,7 +72,7 @@
             this.btnRecieve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecieve.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecieve.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnRecieve.Location = new System.Drawing.Point(456, 313);
+            this.btnRecieve.Location = new System.Drawing.Point(311, 225);
             this.btnRecieve.Name = "btnRecieve";
             this.btnRecieve.Size = new System.Drawing.Size(324, 159);
             this.btnRecieve.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.btnPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPayment.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPayment.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnPayment.Location = new System.Drawing.Point(826, 313);
+            this.btnPayment.Location = new System.Drawing.Point(681, 225);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(324, 159);
             this.btnPayment.TabIndex = 3;
@@ -114,9 +114,9 @@
             this.btnCase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCase.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCase.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnCase.Location = new System.Drawing.Point(826, 114);
+            this.btnCase.Location = new System.Drawing.Point(681, 97);
             this.btnCase.Name = "btnCase";
-            this.btnCase.Size = new System.Drawing.Size(324, 159);
+            this.btnCase.Size = new System.Drawing.Size(282, 98);
             this.btnCase.TabIndex = 4;
             this.btnCase.Text = "رفع قضية";
             this.btnCase.UseVisualStyleBackColor = false;
@@ -135,9 +135,9 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnReports.Location = new System.Drawing.Point(86, 114);
+            this.btnReports.Location = new System.Drawing.Point(1, 97);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(324, 159);
+            this.btnReports.Size = new System.Drawing.Size(264, 88);
             this.btnReports.TabIndex = 5;
             this.btnReports.Text = "تقارير";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Papyrus", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Red;
-            this.btnExit.Location = new System.Drawing.Point(86, 313);
+            this.btnExit.Location = new System.Drawing.Point(-59, 225);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(324, 159);
             this.btnExit.TabIndex = 6;
@@ -171,7 +171,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(487, 19);
+            this.label1.Location = new System.Drawing.Point(342, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(300, 57);
             this.label1.TabIndex = 7;
@@ -184,7 +184,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1264, 569);
+            this.ClientSize = new System.Drawing.Size(975, 392);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);

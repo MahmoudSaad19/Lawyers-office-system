@@ -11,19 +11,28 @@ namespace Presentaion_Layer___winforms__UI_
         public static HomePage HomePage { get; } = new HomePage();
         public static Case Case { get; } = new Case();
         public static Consultancy Consultancy { get; } = new Consultancy();
-        public static Payment Payment { get; } = new Payment();
+       
         public static Reports Reports { get; } = new Reports();
-        public static ReceiveFees Fees { get; } = new ReceiveFees();
+    
         public static NewCase NewCase { get; } = new NewCase();
         public static NewClient NewClient { get; } = new NewClient();
-        public static ReceiptForm ReceiptForm { get; } = new ReceiptForm();
-        public static PaymentInfoEditForm PaymentInfo { get; } = new PaymentInfoEditForm();
+        public static SanadSarf ReceiptForm { get; } = new SanadSarf();
+        public static SanadKabdPaymentEdit paymentInfoEditForm { get; } = new SanadKabdPaymentEdit();
+        public static SanadKabdEntryForm CatchReceiptForm { get; } = new SanadKabdEntryForm();
+        public static MainPage MainPage { get; } = new MainPage();
+        public static ShowClientCasesOrConsultation clientCases { get; } = new ShowClientCasesOrConsultation();
 
+        public static ShowClientCasesOrConsultation ShowClientCases { get; } = new ShowClientCasesOrConsultation();
+        public static EditClientCase EditClientCase { get; } = new EditClientCase();
+        public static ShowClientInfo ShowClientInfo { get; } = new ShowClientInfo();
 
-        //static FormPool()
-        //{
-        //    if (HomePage is null)
-        //        HomePage = new HomePage();
-        //}
-    }
+        public static EditClientConsultaion EditClientConsultaion { get; } = new EditClientConsultaion();
+
+        public static SearchForClient SearchForClient{ get; } = new SearchForClient();
+    //static FormPool()
+    //{
+    //    if (HomePage is null)
+    //        HomePage = new HomePage();
+    //}
+}
 }
