@@ -10,43 +10,60 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class SearchForClient : Form
+    public partial class SanadKabdEntryForm : Form
     {
-        public SearchForClient()
+        #region ctor + Load
+
+        public SanadKabdEntryForm()
         {
             InitializeComponent();
         }
 
-        private void lstOfCasesOrConsNames_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void CatchReceiptForm_Load(object sender, EventArgs e)
         {
-
+            lstOfCasesOrConsNames.Hide();
         }
+        #endregion
 
-        private void lstOfClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ShowClientInfo showClientInfo = FormPool.ShowClientInfo;
-            //showClientInfo.FormClosed += (s, args) => this.Close();
-            showClientInfo.Show();
-            //this.Hide();
-
-
-
-        }
+        #region Methods ( Controls Events ) 
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            lstOfClients.DataSource = new List<View_Models.Client>()
+            lstOfCasesOrConsNames.DataSource = new List<Cases>()
             {
-                new View_Models.Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name=" على محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"},
-                new View_Models.Client(){ Address= "التجمع اللأول", Email="ali.mohamed@gmail.com", Job=" مهندس", Name="  محمد على ", Notes="حديث التخرج", NumberOfCases = 3, SSN = "١٤٦٧٩٠١٤٦٧٩٠٩٠", Telphone = "٠١٤٦٧٩٠١٤٠"}
+               new Cases(){CaseName="جنائية أ" },
+               new Cases(){CaseName="جنائية أ" },
+               new Cases(){CaseName="جنائية أ" }
             };
-            lstOfClients.Show();
+            lstOfCasesOrConsNames.Show();
         }
 
-        private void SearchForClient_Load(object sender, EventArgs e)
+        private void lstOfCasesOrConsNames_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
+            this.Hide();
+            paymentInfoEdit.Show();
         }
+
+        private void lstOfCasesOrConsNames_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
+
+            paymentInfoEdit.Show();
+            this.Hide();
+        }
+
+        private void lstOfCasesOrConsNames_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
+
+            paymentInfoEdit.Show();
+            this.Hide();
+        }
+
+        #endregion
+        
+        #region Menu Strip Events
 
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -107,10 +124,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void AddSanadKabd_Click(object sender, EventArgs e)
         {
-            SanadKabdEntryForm receiptForm = FormPool.CatchReceiptForm;
-            receiptForm.FormClosed += (s, args) => this.Close();
-            receiptForm.Show();
-            this.Hide();
+            
         }
 
         private void AddSanadSarf_Click(object sender, EventArgs e)
@@ -145,14 +159,21 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
             sanadKabdPaymentEdit.Show();
             this.Hide();
-        }
-
-        private void عرضسنداتالصرفToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
-            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
-            sanadKabdPaymentEdit.Show();
-            this.Hide();
-        }
+        } 
+        #endregion
     }
+
+    public class Cases
+    {
+        [DisplayName(" اسم القضية")]
+        public string CaseName { get; set; }
+    }
+
+    public class Consultation
+
+    {
+        [DisplayName(" اسم الاستشارة")]
+        public string ConsultationName { get; set; }
+    }
+
 }

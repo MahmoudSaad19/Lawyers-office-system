@@ -10,45 +10,38 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class Reports : Form
+    public partial class MainPage : Form
     {
-        public Reports()
+        #region ctor + Load
+        public MainPage()
         {
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void MainPage_Load(object sender, EventArgs e)
         {
-            MainPage mainPage = new MainPage();
-            mainPage.FormClosed += (s, args) => this.Close();
-            mainPage.Show();
-            this.Hide();
-        }
+            //QuickReportsPanel.Hide();
+        } 
+        #endregion
 
-        private void Reports_Load(object sender, EventArgs e)
-        {
-            this.TopMost = true;
-
-            this.FormBorderStyle = FormBorderStyle.None;
-
-            this.WindowState = FormWindowState.Maximized;
-        }
-
-
-        private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MainPage mainPage = FormPool.MainPage;
-            mainPage.Show();
-            this.Hide();
-            mainPage.FormClosed += (s, args) => this.Close();
-        }
+        #region Menu Strip Events
 
         private void AddClient_Click(object sender, EventArgs e)
         {
             NewClient newClient = FormPool.NewClient;
             newClient.Show();
-            this.Hide();
             newClient.FormClosed += (s, args) => this.Close();
+            this.Hide();
+
+        }
+
+        private void ShowClient_Click(object sender, EventArgs e)
+        {
+
+            SearchForClient searchForClient = FormPool.SearchForClient;
+            this.Hide();
+            searchForClient.Show();
+            searchForClient.FormClosed += (s, args) => this.Close();
         }
 
         private void AddCase_Click(object sender, EventArgs e)
@@ -57,14 +50,6 @@ namespace Presentaion_Layer___winforms__UI_
             caseForm.FormClosed += (s, args) => this.Close();
             caseForm.Show();
             this.Hide();
-        }
-
-        private void ShowClient_Click(object sender, EventArgs e)
-        {
-            SearchForClient searchForClient = FormPool.SearchForClient;
-            this.Hide();
-            searchForClient.Show();
-            searchForClient.FormClosed += (s, args) => this.Close();
         }
 
         private void ShowCase_Click(object sender, EventArgs e)
@@ -77,6 +62,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void AddConsultaion_Click(object sender, EventArgs e)
         {
+
             Consultancy consultancy = FormPool.Consultancy;
             consultancy.FormClosed += (s, args) => this.Close();
             consultancy.Show();
@@ -107,24 +93,6 @@ namespace Presentaion_Layer___winforms__UI_
             this.Hide();
         }
 
-        private void EnterReportsMenu_Click(object sender, EventArgs e)
-        {
-            Reports reports = FormPool.Reports;
-            reports.FormClosed += (s, args) => this.Close();
-            reports.Show();
-            this.Hide();
-        }
-
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            DialogResult confirmationMessage = MessageBox.Show("هل تريد الخروج؟", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (confirmationMessage == DialogResult.OK)
-            {
-                this.Close();
-            }
-        }
-
         private void عرضسنداتالقبضToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
@@ -140,5 +108,32 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.Show();
             this.Hide();
         }
+
+        private void EnterReportsMenu_Click(object sender, EventArgs e)
+        {
+            Reports reports = FormPool.Reports;
+            reports.FormClosed += (s, args) => this.Close();
+            reports.Show();
+            this.Hide();
+        }
+
+        private void بياناتالمكتبToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmationMessage = MessageBox.Show("هل تريد الخروج؟", "تنبيه", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (confirmationMessage == DialogResult.OK)
+            {
+                this.Close();
+            }
+
+        }
+
+        #endregion
+
     }
 }

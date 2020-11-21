@@ -12,6 +12,8 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class ShowClientCasesOrConsultation : Form
     {
+        #region ctor + Load
+
         public ShowClientCasesOrConsultation()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ClientCases_Load(object sender, EventArgs e)
         {
-            
+
 
             this.TopMost = true;
 
@@ -30,11 +32,15 @@ namespace Presentaion_Layer___winforms__UI_
 
         }
 
+        #endregion
+
+        #region Methods ( Controls Events )
+
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
-            if(CaseCheck.Checked)
+            if (CaseCheck.Checked)
             {
-             lstOfCasesOrConsNames.DataSource = new List<Cases>()
+                lstOfCasesOrConsNames.DataSource = new List<Cases>()
             {
                new Cases(){CaseName="جنائية أ" },
                new Cases(){CaseName="جنائية أ" },
@@ -44,16 +50,16 @@ namespace Presentaion_Layer___winforms__UI_
             }
             else
             {
-               lstOfCasesOrConsNames.DataSource = new List<Consultation>()
+                lstOfCasesOrConsNames.DataSource = new List<Consultation>()
             {
                new Consultation(){ConsultationName=" استشارة احوال مدنية" },
                new Consultation(){ConsultationName="استشارة احوال شخصية" },
                new Consultation(){ConsultationName="استشارة احوال جنائية" }
             };
-                    lstOfCasesOrConsNames.Show();
+                lstOfCasesOrConsNames.Show();
             }
 
-            
+
         }
 
         private void btnHomePage_Click_1(object sender, EventArgs e)
@@ -66,7 +72,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void lstOfCasesOrConsNames_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(CaseCheck.Checked )
+            if (CaseCheck.Checked)
             {
                 EditClientCase EditClientCase = FormPool.EditClientCase;
                 //EditClientCase.FormClosed += (s, args) => this.Close();
@@ -80,9 +86,12 @@ namespace Presentaion_Layer___winforms__UI_
                 editClientConsultaion.Show();
                 //this.Hide();
             }
-           
+
 
         }
+        #endregion
+
+        #region Menu Strip Events
 
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -119,10 +128,6 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ShowCase_Click(object sender, EventArgs e)
         {
-            ShowClientCasesOrConsultation clientCases = FormPool.clientCases;
-            clientCases.FormClosed += (s, args) => this.Close();
-            clientCases.Show();
-            this.Hide();
         }
 
         private void AddConsultaion_Click(object sender, EventArgs e)
@@ -135,10 +140,6 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ShowConsultaion_Click(object sender, EventArgs e)
         {
-            ShowClientCasesOrConsultation clientCases = FormPool.clientCases;
-            clientCases.FormClosed += (s, args) => this.Close();
-            clientCases.Show();
-            this.Hide();
         }
 
         private void AddSanadKabd_Click(object sender, EventArgs e)
@@ -190,6 +191,8 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.Show();
             this.Hide();
         }
+        #endregion
+
     }
 
 

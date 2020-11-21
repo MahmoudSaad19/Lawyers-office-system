@@ -7,42 +7,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Presentaion_Layer___winforms__UI_.View_Models;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class SanadKabdPaymentEdit : Form
+    public partial class SearchForClient : Form
     {
-        public SanadKabdPaymentEdit()
+        #region ctor + Load
+        public SearchForClient()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void SearchForClient_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void PaymentInfoEditForm_Load(object sender, EventArgs e)
+
+        #endregion
+
+        #region Methods ( Controls Events  )
+
+        private void lstOfClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            ShowClientInfo showClientInfo = FormPool.ShowClientInfo;
+            showClientInfo.Show();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            SanadSarf catchReceiptForm = FormPool.ReceiptForm;
-            this.Hide();
-            catchReceiptForm.Show();
-            catchReceiptForm.FormClosed += (s, args) => this.Close();
+            lstOfClients.DataSource = Client.Data();
+            lstOfClients.Show();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            MainPage mainPage = FormPool.MainPage;
-            mainPage.FormClosed += (s, args) => this.Close();
-            this.Hide();
-            mainPage.Show();
-           
+        #endregion
 
-        }
+        #region Menu Strip Events
 
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -71,10 +72,6 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void ShowClient_Click(object sender, EventArgs e)
         {
-            SearchForClient searchForClient = FormPool.SearchForClient;
-            this.Hide();
-            searchForClient.Show();
-            searchForClient.FormClosed += (s, args) => this.Close();
         }
 
         private void ShowCase_Click(object sender, EventArgs e)
@@ -135,8 +132,21 @@ namespace Presentaion_Layer___winforms__UI_
             }
         }
 
+        private void عرضسنداتالقبضToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
+            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
+            sanadKabdPaymentEdit.Show();
+            this.Hide();
+        }
+
         private void عرضسنداتالصرفToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        }
+            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
+            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
+            sanadKabdPaymentEdit.Show();
+            this.Hide();
+        } 
+        #endregion
     }
 }

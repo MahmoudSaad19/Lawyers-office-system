@@ -10,59 +10,28 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class SanadKabdEntryForm : Form
+    public partial class Reports : Form
     {
-        public SanadKabdEntryForm()
+        #region ctor + Load
+        
+        public Reports()
         {
             InitializeComponent();
         }
 
-
-
-        private void CatchReceiptForm_Load(object sender, EventArgs e)
+      
+        private void Reports_Load(object sender, EventArgs e)
         {
-            lstOfCasesOrConsNames.Hide();
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.WindowState = FormWindowState.Maximized;
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            lstOfCasesOrConsNames.DataSource = new List<Cases>()
-            {
-               new Cases(){CaseName="جنائية أ" },
-               new Cases(){CaseName="جنائية أ" },
-               new Cases(){CaseName="جنائية أ" }
-            };
-            lstOfCasesOrConsNames.Show();
-
-
-        }
-
-
-
-        private void lstOfCasesOrConsNames_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
-            this.Hide();
-            paymentInfoEdit.Show();
-
-
-        }
-
-        private void lstOfCasesOrConsNames_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
-
-            paymentInfoEdit.Show();
-            this.Hide();
-        }
-
-        private void lstOfCasesOrConsNames_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SanadKabdPaymentEdit paymentInfoEdit = FormPool.paymentInfoEditForm;
-
-            paymentInfoEdit.Show();
-            this.Hide();
-        }
+        #endregion
+        
+        #region Menu Strip Events
 
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -77,7 +46,6 @@ namespace Presentaion_Layer___winforms__UI_
             NewClient newClient = FormPool.NewClient;
             newClient.Show();
             this.Hide();
-
             newClient.FormClosed += (s, args) => this.Close();
         }
 
@@ -139,10 +107,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void EnterReportsMenu_Click(object sender, EventArgs e)
         {
-            Reports reports = FormPool.Reports;
-            reports.FormClosed += (s, args) => this.Close();
-            reports.Show();
-            this.Hide();
+            
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -162,17 +127,15 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.Show();
             this.Hide();
         }
-    }
-    public class Cases
-    {
-        [DisplayName(" اسم القضية")]
-        public string CaseName { get; set; }
-    }
-    public class Consultation
 
-    {
-        [DisplayName(" اسم الاستشارة")]
-        public string ConsultationName { get; set; }
-    }
+        private void عرضسنداتالصرفToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
+            sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
+            sanadKabdPaymentEdit.Show();
+            this.Hide();
+        } 
+        #endregion
 
+    }
 }

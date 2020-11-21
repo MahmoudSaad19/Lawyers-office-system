@@ -12,17 +12,13 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class EditClientCase : Form
     {
+        #region ctor
+
         public EditClientCase()
         {
             InitializeComponent();
-        }
+        } 
 
-        private void btnHomePage_Click(object sender, EventArgs e)
-        {
-            MainPage mainPage = FormPool.MainPage;
-            mainPage.Show();
-            this.Hide();
-            mainPage.FormClosed += (s, args) => this.Close();
-        }
+        #endregion
     }
 }

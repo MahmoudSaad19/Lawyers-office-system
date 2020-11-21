@@ -11,17 +11,25 @@ using Presentaion_Layer___winforms__UI_.View_Models;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class Consultancy : Form
+    public partial class Case : Form
     {
-        public Consultancy()
+        bool isName;
+
+        #region ctor + Load
+
+        public Case()
         {
             InitializeComponent();
+            isName = false;
         }
 
-        private void Consultancy_Load(object sender, EventArgs e)
+        private void Case_Load(object sender, EventArgs e)
         {
             ResetUI();
         }
+
+        #endregion
+
         #region Controls Methods
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -79,7 +87,7 @@ namespace Presentaion_Layer___winforms__UI_
             int width = (this.Width - 900) / 2;
             int height = (this.Height - 100) / 2;
             grpBoxRadio.Location = new Point(width + 508, height + 26);
-            txtSearch.Location = new Point(width, height + 33);
+            txtSearch.Location = new Point(width , height + 33);
             btnSearch.Location = new Point(width + 756, height + 34);
             HideAllElements();
             btnNewClient.Show();
@@ -139,6 +147,8 @@ namespace Presentaion_Layer___winforms__UI_
 
         #endregion
 
+        #region Menu Strip Events
+
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainPage mainPage = FormPool.MainPage;
@@ -157,10 +167,7 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void AddCase_Click(object sender, EventArgs e)
         {
-            Case caseForm = FormPool.Case;
-            caseForm.FormClosed += (s, args) => this.Close();
-            caseForm.Show();
-            this.Hide();
+            
         }
 
         private void ShowClient_Click(object sender, EventArgs e)
@@ -181,6 +188,10 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void AddConsultaion_Click(object sender, EventArgs e)
         {
+            Consultancy consultancy = FormPool.Consultancy;
+            consultancy.FormClosed += (s, args) => this.Close();
+            consultancy.Show();
+            this.Hide();
         }
 
         private void ShowConsultaion_Click(object sender, EventArgs e)
@@ -233,17 +244,14 @@ namespace Presentaion_Layer___winforms__UI_
             this.Hide();
         }
 
-        private void dataGridViewOldClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void عرضسنداتالصرفToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SanadKabdPaymentEdit sanadKabdPaymentEdit = FormPool.SanadKabdPaymentEdit;
             sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
             sanadKabdPaymentEdit.Show();
             this.Hide();
-        }
+        } 
+        #endregion
     }
+
 }

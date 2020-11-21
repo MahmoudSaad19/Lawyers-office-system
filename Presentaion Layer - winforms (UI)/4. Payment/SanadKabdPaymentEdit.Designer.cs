@@ -1,6 +1,6 @@
 ﻿namespace Presentaion_Layer___winforms__UI_
 {
-    partial class MainPage
+    partial class SanadKabdPaymentEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            this.FooterPanel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.QuickReportsPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.الرئيسيةToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.العملاءToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,87 +59,136 @@
             this.EnterReportsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.بياناتالمكتبToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.FooterPanel.SuspendLayout();
-            this.QuickReportsPanel.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FooterPanel
-            // 
-            this.FooterPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.FooterPanel.BackColor = System.Drawing.Color.Transparent;
-            this.FooterPanel.Controls.Add(this.label4);
-            this.FooterPanel.Font = new System.Drawing.Font("Simplified Arabic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.FooterPanel.Location = new System.Drawing.Point(57, 416);
-            this.FooterPanel.Name = "FooterPanel";
-            this.FooterPanel.Size = new System.Drawing.Size(944, 72);
-            this.FooterPanel.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arabic Typesetting", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.ForeColor = System.Drawing.Color.Snow;
-            this.label4.Location = new System.Drawing.Point(44, 26);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(884, 40);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "حقوق الملكية محفوظه لمكتب محاماه            التابع للمحامي          العنوان      " +
-    "     رقم التليفون       لسنه 2020";
-            // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(796, 19);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Info;
+            this.label1.Location = new System.Drawing.Point(659, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 40);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "عدد العملاء";
+            this.label1.Size = new System.Drawing.Size(160, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "اسم القضية/الاستشارة";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arabic Typesetting", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(440, 19);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Info;
+            this.label2.Location = new System.Drawing.Point(730, 293);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 40);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "عدد القضايا";
+            this.label2.Size = new System.Drawing.Size(89, 33);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "تاريخ الدفعة";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arabic Typesetting", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(75, 19);
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Info;
+            this.label3.Location = new System.Drawing.Point(739, 226);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 40);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "عدد الاستشارات";
+            this.label3.Size = new System.Drawing.Size(80, 33);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "قيمة الدفعة";
             // 
-            // QuickReportsPanel
+            // label5
             // 
-            this.QuickReportsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.QuickReportsPanel.BackColor = System.Drawing.Color.Transparent;
-            this.QuickReportsPanel.Controls.Add(this.label7);
-            this.QuickReportsPanel.Controls.Add(this.label6);
-            this.QuickReportsPanel.Controls.Add(this.label5);
-            this.QuickReportsPanel.Controls.Add(this.label3);
-            this.QuickReportsPanel.Controls.Add(this.label2);
-            this.QuickReportsPanel.Controls.Add(this.label1);
-            this.QuickReportsPanel.Location = new System.Drawing.Point(2, 168);
-            this.QuickReportsPanel.Name = "QuickReportsPanel";
-            this.QuickReportsPanel.Size = new System.Drawing.Size(1009, 133);
-            this.QuickReportsPanel.TabIndex = 7;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Info;
+            this.label5.Location = new System.Drawing.Point(722, 364);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 33);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "المبلغ المتبقي ";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.ForeColor = System.Drawing.SystemColors.Info;
+            this.label6.Location = new System.Drawing.Point(653, 451);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(166, 33);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "تاريخ الاستحقاق القادم";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePicker1.Location = new System.Drawing.Point(418, 293);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(198, 20);
+            this.dateTimePicker1.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(233, 148);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(383, 33);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Location = new System.Drawing.Point(233, 226);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(383, 33);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Location = new System.Drawing.Point(233, 364);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(383, 33);
+            this.textBox3.TabIndex = 9;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Location = new System.Drawing.Point(233, 451);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(383, 33);
+            this.textBox4.TabIndex = 10;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(98)))), ((int)(((byte)(108)))));
+            this.button2.Font = new System.Drawing.Font("Arabic Typesetting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Info;
+            this.button2.Location = new System.Drawing.Point(407, 524);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 41);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "تخزين";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // menuStrip2
             // 
@@ -153,8 +206,8 @@
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip2.Size = new System.Drawing.Size(1013, 36);
-            this.menuStrip2.TabIndex = 9;
+            this.menuStrip2.Size = new System.Drawing.Size(985, 36);
+            this.menuStrip2.TabIndex = 29;
             this.menuStrip2.Text = "menuStrip2";
             // 
             // الرئيسيةToolStripMenuItem
@@ -291,7 +344,6 @@
             this.بياناتالمكتبToolStripMenuItem.Name = "بياناتالمكتبToolStripMenuItem";
             this.بياناتالمكتبToolStripMenuItem.Size = new System.Drawing.Size(137, 32);
             this.بياناتالمكتبToolStripMenuItem.Text = "بيانات المكتب";
-            this.بياناتالمكتبToolStripMenuItem.Click += new System.EventHandler(this.بياناتالمكتبToolStripMenuItem_Click);
             // 
             // Exit
             // 
@@ -300,68 +352,29 @@
             this.Exit.Text = "خروج";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // label5
+            // SanadKabdPaymentEdit
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(803, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 55);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "100";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(459, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 55);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "43";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(120, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 55);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "57";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // MainPage
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1013, 487);
-            this.ControlBox = false;
-            this.Controls.Add(this.QuickReportsPanel);
-            this.Controls.Add(this.FooterPanel);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(155)))), ((int)(((byte)(151)))));
+            this.ClientSize = new System.Drawing.Size(985, 629);
             this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip2;
-            this.Name = "MainPage";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "MainPage";
-            this.TopMost = true;
+            this.Name = "SanadKabdPaymentEdit";
+            this.Text = "PaymentInfoEditForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MainPage_Load);
-            this.FooterPanel.ResumeLayout(false);
-            this.FooterPanel.PerformLayout();
-            this.QuickReportsPanel.ResumeLayout(false);
-            this.QuickReportsPanel.PerformLayout();
+            this.Load += new System.EventHandler(this.PaymentInfoEditForm_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -370,12 +383,18 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel FooterPanel;
-        private System.Windows.Forms.Label label4;
+
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel QuickReportsPanel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem الرئيسيةToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem العملاءToolStripMenuItem;
@@ -396,8 +415,5 @@
         private System.Windows.Forms.ToolStripMenuItem EnterReportsMenu;
         private System.Windows.Forms.ToolStripMenuItem بياناتالمكتبToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Exit;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
     }
 }

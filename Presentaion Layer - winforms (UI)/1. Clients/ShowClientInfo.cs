@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace Presentaion_Layer___winforms__UI_
 {
-    public partial class EditClientConsultaion : Form
+    public partial class ShowClientInfo : Form
     {
-        public EditClientConsultaion()
+        #region ctor + Load
+        public ShowClientInfo()
         {
             InitializeComponent();
         }
 
-        private void EditClientConsultaion_Load(object sender, EventArgs e)
+        private void ShowClientInfo_Load(object sender, EventArgs e)
         {
-
+            ShowClientInfo clientInfo = FormPool.ShowClientInfo;
         }
+
+        #endregion
     }
 }

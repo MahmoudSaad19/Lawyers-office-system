@@ -12,6 +12,7 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class NewCase : Form
     {
+        #region ctor + Load
         public NewCase()
         {
             InitializeComponent();
@@ -22,10 +23,15 @@ namespace Presentaion_Layer___winforms__UI_
 
         }
 
+
+        #endregion
+        
+        #region Methods ( Controls Events )
+
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
-             MainPage mainPage = FormPool.MainPage;
+
+            MainPage mainPage = FormPool.MainPage;
             mainPage.Show();
             this.Hide();
             mainPage.FormClosed += (s, args) => this.Close();
@@ -87,6 +93,10 @@ namespace Presentaion_Layer___winforms__UI_
         {
 
         }
+
+        #endregion
+        
+        #region Menu Strip Events
 
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -189,6 +199,8 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
             sanadKabdPaymentEdit.Show();
             this.Hide();
-        }
+        } 
+
+        #endregion
     }
 }

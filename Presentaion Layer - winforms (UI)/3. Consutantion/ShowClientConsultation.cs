@@ -12,6 +12,8 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class ShowClientConsultation : Form
     {
+        #region ctor + Load
+        
         public ShowClientConsultation()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace Presentaion_Layer___winforms__UI_
         private void ShowClientConsultation_Load(object sender, EventArgs e)
         {
 
-        }
+        } 
+        #endregion
     }
 }

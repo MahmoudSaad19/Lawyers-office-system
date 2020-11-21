@@ -12,24 +12,26 @@ namespace Presentaion_Layer___winforms__UI_
 {
     public partial class NewClient : Form
     {
+        #region Ctor + Load
         public NewClient()
         {
             InitializeComponent();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+
+        private void NewClient_Load(object sender, EventArgs e)
         {
-            HomePage home = FormPool.HomePage;
-            home.Show();
-            this.Hide();
+            this.MaximumSize = this.Size;
         }
+        #endregion
+
+        #region Methods ( Controls Events  )
 
         private void btnSaveClient_Click(object sender, EventArgs e)
         {
-
-            if(radOpenCase.Checked)
+            if (radOpenCase.Checked)
             {
-                
+
                 NewCase newCase = FormPool.NewCase;
                 newCase.FormClosed += (s, args) => this.Close();
                 newCase.Show();
@@ -42,14 +44,11 @@ namespace Presentaion_Layer___winforms__UI_
                 this.Hide();
                 mainPage.FormClosed += (s, args) => this.Close();
             }
-           
         }
 
-        private void NewClient_Load(object sender, EventArgs e)
-        {
-            this.MaximumSize = this.Size;
-        }
+        #endregion
 
+        #region Menu Strip Events
         private void الرئيسيةToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MainPage mainPage = FormPool.MainPage;
@@ -60,10 +59,6 @@ namespace Presentaion_Layer___winforms__UI_
 
         private void AddClient_Click(object sender, EventArgs e)
         {
-            NewClient newClient = FormPool.NewClient;
-            newClient.Show();
-            this.Hide();
-            newClient.FormClosed += (s, args) => this.Close();
         }
 
         private void AddCase_Click(object sender, EventArgs e)
@@ -154,6 +149,7 @@ namespace Presentaion_Layer___winforms__UI_
             sanadKabdPaymentEdit.FormClosed += (s, args) => this.Close();
             sanadKabdPaymentEdit.Show();
             this.Hide();
-        }
+        } 
+        #endregion
     }
 }
